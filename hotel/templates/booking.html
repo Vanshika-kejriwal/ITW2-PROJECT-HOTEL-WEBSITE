@@ -1,0 +1,58 @@
+{% extends 'base.html' %}
+{% block body %}
+{% load static %}
+<link rel="stylesheet" href="{% static 'css/book.css'%} ">
+ <h1 class="my-3 py-3 text-center">CUSTOMER REGISTRATION</h1>
+ <center>
+      <form class="register" action="" method="POST">
+         {% csrf_token %}
+         <div class="row">
+             <label class="col-sm-1">Name</label>
+             <div class="col-sm-2">
+               {{form.name}}
+            </div>
+            <label  class="col-sm-1" >Phone </label>
+            <div class="col-sm-2">
+              {{form.Phone}}
+            </div>
+          </div>
+          <div class="row my-3">
+             <label  class="col-sm-1 ">ID proof</label>
+             <div class="col-sm-2">
+               {{form.IDproof}}
+             </div>
+             <label  class="col-sm-1 ">ID Number</label>
+             <div class="col-sm-2">
+              {{form.ID_num}}
+             </div>
+          </div>
+          <h1 class="my-6 py-4 text-center">BOOKING DETAILS</h1>
+          <div class="row my-3">
+            <label  class="col-sm-1 col-form-label">Adults</label>
+            <div class="col-sm-2">
+               {{form.Adults}}
+             </div>
+             <label  class="col-sm-1 col-form-label">Children</label>
+            <div class="col-sm-2">
+              {{form.children}}
+             </div>
+             <label  class="col-sm-1 col-form-label">Room Category</label>
+            <div class="col-sm-2">
+               {{form.RoomCategory}}
+             </div>
+          </div>
+          <div class="row my-3">
+            <label  class="col-sm-1 col-form-label">From</label>
+            <div class="col-sm-2">
+               {{form.CheckIN}}
+            </div>
+            <label  class="col-sm-1 col-form-label">To</label>
+            <div class="col-sm-2">
+               {{form.CheckOUT}}
+            </div>
+          </div>
+         <input type="submit" class="button my-4" value="proceed for booking">
+     </form>  
+ </center>
+ 
+{% endblock body %}

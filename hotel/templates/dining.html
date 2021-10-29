@@ -1,0 +1,58 @@
+{% extends 'base.html' %}
+{% block body %}
+{% load static %}
+<link rel="stylesheet" href="{% static 'css/dining.css'%}">
+<h1>Unique Dining Experience</h1>
+<p>Enjoy a unique dining experience in our signature restraunts, with a variety of cuisines to dwe your taste buds over. We believe not only in good taste, but also make sure that our guests have a healthy stay, by maintaining good quality standards.</p>
+<h1 class="cuisines">Our Signature Cuisines</h1>
+<div class="container">
+    <div class="row">
+        <div class="col-md-6">
+            <div class="card">
+                <div class="imgbx">
+                    <img src="{% static 'images/indian.jpg'%}" alt="">
+                </div>
+                <div class="content">
+                    <h2>indian</h2>
+                    <p>Give yourself a chance to get lured with the special taste of indian specialities. We bring together the distinct styles under one roof.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="card">
+                <div class="imgbx">
+                    <img src="{% static 'images/chinese.jpg'%}" alt="">
+                </div>
+                <div class="content">
+                    <h2>chinese</h2>
+                    <p>Indulge in variety of finger licking chinese dishes. The ambience and the taste engages not only the plate , but also the mind.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row my-3">
+        <div class="col-md-6">
+            <div class="card">
+                <div class="imgbx">
+                    <img src="{% static 'images/italian.jpg'%}" alt="">
+                </div>
+                <div class="content">
+                    <h2>italian</h2>
+                    <p>Take a virtual feel of the place as the food satisfies your craving in each bite. We have something for everyone from children to elderly.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="card">
+                <div class="imgbx">
+                    <img src="{% static 'images/mexican.jpg'%}" alt="">
+                </div>
+                <div class="content">
+                    <h2>mexican</h2>
+                    <p>Treat your taste buds with truely unique, contemporary mexican specialities, made with ingridients specially flown from Japan. </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock body %}

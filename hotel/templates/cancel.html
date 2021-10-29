@@ -1,0 +1,47 @@
+{% extends 'base.html' %}
+{% block body %}
+{% load static %}
+<link rel="stylesheet" href="{% static 'css/cancel.css'%}">
+<div class="main">
+    <div class="cancel">
+        <h1 class="my-4">cancel booking here ...</h1>
+        <form class="my-9" action="" method="POST" id="register">
+            {% csrf_token %}
+            <div class="row">
+               <label class="col-sm-1 ">Name</label>
+               <div class="col-sm-2">
+                   {{form.name}}
+               </div>
+            </div>
+            <div class="row my-3">
+                <label class="col-sm-1">Phone</label>
+                <div class="col-sm-2">
+                    {{form.Phone}}
+                </div>
+             </div>
+             <div class="row my-3">
+                <label class="col-sm-1">Check In</label>
+                <div class="col-sm-2">
+                    {{form.CheckIN}}
+                </div>
+             </div>
+             <div class="row my-3">
+                <label class="col-sm-1">Check Out</label>
+                <div class="col-sm-2">
+                    {{form.CheckOUT}}
+                </div>
+             </div>
+             <div class="row my-3">
+                <label class="col-sm-1">Room Category</label>
+                <div class="col-sm-2">
+                    {{form.room_catagory}}
+                </div>
+             </div>
+          <input type="submit" class="button my-4" value="Cancel">
+         </form>
+    
+     </div>
+</div>
+
+     
+{% endblock body %}

@@ -1,0 +1,14 @@
+.nav-item .nav-link{
+    font-size: larger;
+    font-family: fantasy;
+    font-weight: bolder;
+    margin: 0 20px;
+}
+.nav-item .nav-link:hover{
+    background-color: rgb(240, 240, 12);
+    border-radius: 25%;
+    color: brown; 
+}
+.bgbrown{
+    background-image: linear-gradient(-90deg,rgb(151, 151, 248) , rgb(250, 124, 85));
+}

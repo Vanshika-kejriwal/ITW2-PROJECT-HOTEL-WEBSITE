@@ -1,0 +1,37 @@
+.carousel-item{
+    height: 40%;
+    max-height: 500px;
+    width: fit-content;
+}
+.acc{
+    text-align: center;
+    position: relative;
+    color: white;
+}
+.acc img{
+    width: 100%;
+}
+.acc .content{
+    background: rgba(0,0,0,0.5);
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    top: 0;
+    text-align: center;
+    padding-top: 30%;
+    transform: perspective(400px) rotateX(-90deg);
+    transform-origin: center top 0;
+    transition: all 0.5s ease 0s;
+    opacity: 0;
+}
+.acc:hover .content{
+    opacity: 1;
+    transform: perspective(400px) rotateX(0deg);
+}
+.desc{
+    font-size: large;
+}
+.container{
+    margin-top: 20px;
+}
